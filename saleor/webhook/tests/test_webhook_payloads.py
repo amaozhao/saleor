@@ -547,7 +547,7 @@ def test_generate_invoice_payload(fulfilled_order):
         },
         "order": {
             "type": "Order",
-            "token": invoice.order.token,
+            "token": invoice.order.id,
             "id": graphene.Node.to_global_id("Order", invoice.order.id),
             "private_metadata": {},
             "metadata": {},
